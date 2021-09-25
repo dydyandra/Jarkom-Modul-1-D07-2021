@@ -86,7 +86,7 @@ Pertama-tama kita harus mendapatkan username dan password sebelum menuju portal.
  ```
    mysql
  ```
-   untuk mendapatkan paket-paket mysql. Karena menurut informasi soal, username dan password terdapat dari query insert pada mysql. 
+   untuk mendapatkan paket-paket mysql. Karena menurut informasi soal, username dan password terdapat dari query insert pada mysql. <br>
    <image src="images/no5a.png" alt="nomor 5a" width="700"><br>
  Setelah itu periksa isi-isi paket tersebut. Klik kanan pada salah satu paket lalu klik Follow > TCP Stream. maka akan didapat isi dari percakapan paket paket mysql tersebut. <br>
      <image src="images/no5b.png" alt="nomor 5b" width="400"><br>
