@@ -166,7 +166,7 @@ Find string in packet list `history.txt`
 
 Kemudian, klik kanan dan pilih `Follow > TCP Stream`. Ada petunjuk baru, yaitu `bukanapaapa.txt`.
   
-<img src="images/no10b.png" alt="nomor 10b" width="700"> <br>
+<img src="images/no10b.png" alt="nomor 10b" width="500"> <br>
 
 Ulangi langkah sebelumnya, input display filter: `ftp-data` <br>
 Find string in packet list `bukanapaapa.txt`
