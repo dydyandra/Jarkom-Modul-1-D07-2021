@@ -112,7 +112,7 @@ Kemudian, klik kanan dan pilih `Follow > TCP Stream`. Kita akan menemukan petunj
 
 <img src="https://github.com/dydyandra/Jarkom-Modul-1-D07-2021/blob/master/images/no10d.png" alt="nomor 10d" width="700"> <br>
 
-Gunakan password tersebut untuk membuka file `wanted.pdf`.
+Gunakan password tersebut untuk membuka file `Wanted.pdf`.
 
 <img src="https://github.com/dydyandra/Jarkom-Modul-1-D07-2021/blob/master/images/no10e.png" alt="nomor 10e" width="500"> <br>
 
