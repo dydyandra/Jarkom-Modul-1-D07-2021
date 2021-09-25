@@ -65,7 +65,9 @@ Display filter:
 ### Ada 500 file zip yang disimpan ke FTP Server dengan nama 0.zip, 1.zip, 2.zip, ..., 499.zip. Simpan dan Buka file pdf tersebut. (Hint = nama pdf-nya `Real.pdf`)
 
 Display filter yang digunakan adalah: <br>
-`ftp-data contains Real.pdf`
+```
+  ftp-data contains Real.pdf
+```
 
 Kemudian akan muncul paket-paket berikut: <br>
 <img src='images/no7a.png' alt="nomor 7a" width="700">
@@ -79,7 +81,9 @@ Adapun isi dari file tersebut adalah: <br>
 ## Soal 8
 ### Cari paket yang menunjukan pengambilan file dari FTP tersebut!
 Display filter yang digunakan adalah: <br>
-`ftp.request.command==RETR`
+```
+  ftp.request.command==RETR
+```
 
 Kemudian setelah kita melakukan pencarian menggunakan *display filter*, kita dapat melihat paket-paket yang berkaitan. 
 
