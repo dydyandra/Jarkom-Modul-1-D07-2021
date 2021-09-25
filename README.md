@@ -6,8 +6,24 @@ Amanda Rozi Kurnia | 05111940000094 |
 Dyandra Paramitha W. | 05111940000119 |
 Daanii Nabil Ghinannafsi Kusnanta | 05111940000163 |
 
+## Daftar Soal
+* [Soal 1](#soal1)
+* [Soal 2](#soal2)
+* [Soal 3](#soal3)
+* [Soal 4](#soal4)
+* [Soal 5](#soal5)
+* [Soal 6](#soal6)
+* [Soal 7](#soal7)
+* [Soal 8](#soal8)
+* [Soal 9](#soal9)
+* [Soal 10](#soal10)
+* [Soal 11](#soal11)
+* [Soal 12](#soal12)
+* [Soal 13](#soal13)
+* [Soal 14](#soal14)
+* [Soal 15](#soal15)
 
-## Soal 1
+## <a name="soal1"></a> Soal 1
 ### Sebutkan webserver yang digunakan pada "ichimarumaru.tech"! 
 
 Display filter yang digunakan adalah: <br>
@@ -18,14 +34,14 @@ Setelah memasukkan display filter dan melakukan _search_, akan muncul paket yang
 
 <img src="images/no1a.png" alt="nomor 1a" width="700"><br>
 
-Pilih paket pertama, klik kanan kemudian **Follow > HTTP Stream.** Terlihat bahwa web server yang digunakan yaitu __nginx/1.18.0 (Ubuntu)__
+Pilih paket pertama, klik kanan kemudian **Follow > HTTP Stream.** Akan muncul sebuah panel baru yang berisi informasi tentang website tersebut. Terlihat bahwa web server yang digunakan adalah __nginx/1.18.0 (Ubuntu)__
 
 <img src="images/no1b.png" alt="nomor 1b" width="700">
 
-## Soal 2
+## <a href="#soal2"></a> Soal 2
 ### Temukan paket dari web-web yang menggunakan basic authentication method!
 
-Display filter yang digunakan adalah: <br>
+Untuk menemukan paket dari web yang menggunakan basic authentication method adalah sebagai berikut. Display filter: <br>
 ```
 http.authbasic
 ```
@@ -34,34 +50,34 @@ Adapun setelah memasukkan _display filter_ maka akan muncul paket-paket yaitu:
 
 <image src="images/no2a.png" alt="nomor 2a" width="700">
 
-## Soal 3
+## <a href="#soal3"></a> Soal 3
 ### Ikuti perintah di [basic.ichimarumaru.tech](http://basic.ichimarumaru.tech/)! Username dan password bisa didapatkan dari file .pcapng!
 Display filter:
 ```
   http.host == basic.ichimarumaru.tech
 ```
-Kemudian, find string in packet details "Credentials" <br>
+Kemudian, find string in packet details "Credentials". Pada bagian Authorization, akan ditemukan Credentials yang merupakan username dan password yang dicari. <br>
   
 <image src="images/no3a.png" alt="nomor 3a" width="700"><br>
   
 **Username:** kuncimenujulautan <br>
 **Password:** tQKEJFbgNGC1NCZlWAOjhyCOm6o3xEbPkJhTciZN
   
-## Soal 4
+## <a href="#soal4"></a> Soal 4
 ### Temukan paket mysql yang mengandung perintah query select!
   
-## Soal 5
+## <a href="#soal5"></a> Soal 5
 ### Login ke [portal.ichimarumaru.tech](http://portal.ichimarumaru.tech/) kemudian ikuti perintahnya! Username dan password bisa didapat dari query insert pada table users dari file .pcap! 
   
-## Soal 6
+## <a href="#soal6"></a> Soal 6
 ### Cari username dan password ketika melakukan login ke FTP Server!
-Display filter:
+FTP menggunakan command "USER" ketika ingin memasukkan username dan "PASS" ketika ingin memasukkan password. Display filter:
 ```
   ftp.request.command == USER || ftp.request.command == PASS
 ```
 <image src="images/no6a.png" alt="nomor 6a" width="700"><br>
   
-## Soal 7
+## <a href="#soal7"></a> Soal 7
 ### Ada 500 file zip yang disimpan ke FTP Server dengan nama 0.zip, 1.zip, 2.zip, ..., 499.zip. Simpan dan Buka file pdf tersebut. (Hint = nama pdf-nya `Real.pdf`)
 
 Display filter yang digunakan adalah: <br>
@@ -78,7 +94,7 @@ Adapun isi dari file tersebut adalah: <br>
 <img src='images/no7b.png' alt="nomor 7b" width="700">
 
 
-## Soal 8
+## <a href="#soal8"></a> Soal 8
 ### Cari paket yang menunjukan pengambilan file dari FTP tersebut!
 Display filter yang digunakan adalah: <br>
 ```
@@ -89,7 +105,7 @@ Kemudian setelah kita melakukan pencarian menggunakan *display filter*, kita dap
 
 <img src='images/no8a.png' alt="nomor 8a" width="700">
 
-## Soal 9
+## <a href="#soal9"></a> Soal 9
 ### Dari paket-paket yang menuju FTP terdapat indikasi penyimpanan beberapa file. Salah satunya adalah sebuah file berisi data rahasia dengan nama `secret.zip`. Simpan dan buka file tersebut!
 
 Display filter:
@@ -106,7 +122,7 @@ Kemudian, buka file `secret.zip` yang telah disimpan. Akan muncul perintah untuk
 <img src="images/no9b.png" alt="nomor 9b" width="700"> <br>
 
 
-## Soal 10
+## <a href="#soal10"></a> Soal 10
 ### Selain itu terdapat `history.txt` yang kemungkinan berisi history bash server tersebut! Gunakan isi dari `history.txt` untuk menemukan password untuk membuka file rahasia yang ada di `secret.zip`!
 
 Display filter:
@@ -135,7 +151,7 @@ Gunakan password tersebut untuk membuka file `Wanted.pdf`.
 
 <img src="images/no10e.png" alt="nomor 10e" width="500"> <br>
 
-## Soal 11
+## <a href="#soal11"></a> Soal 11
 ### Mengambil paket yang berasal dari port 80
 
 Capture Filter:
@@ -149,7 +165,7 @@ Hasil Capture Filter: <br>
   
 <img src="images/no11b.png" alt="nomor 11b" width="700"> <br>
   
-## Soal 12
+## <a href="#soal12"></a> Soal 12
 ###  Mengambil paket yang mengandung port 21
 
 Capture Filter:
@@ -163,7 +179,7 @@ Hasil Capture Filter: <br>
   
 <img src="images/no12b.png" alt="nomor 12b" width="700"> <br>
 
-## Soal 13
+## <a href="#soal13"></a> Soal 13
 ### Menampilkan paket yang menuju port 443
 
 Capture Filter:
@@ -177,7 +193,7 @@ Hasil Capture Filter: <br>
   
 <img src="images/no13b.png" alt="nomor 13b" width="700"> <br>
   
-## Soal 14
+## <a href="#soal14"></a> Soal 14
 ### Mengambil paket yang tujuannya [kemenag.go.id](https://kemenag.go.id/)
 
 Capture Filter:
@@ -191,7 +207,7 @@ Hasil Capture Filter: <br>
   
 <img src="images/no14b.png" alt="nomor 14b" width="700"> <br>
 
-## Soal 15
+  ## <a href="#soal15"></a> Soal 15
 ### Mengambil paket yang berasal dari ip kalian
 Untuk mendapatkan ip pribadi: Open cmd ketik ```ipconfig``` <br>
 ip pada jaringan Wireless LAN adapter Wi-Fi adalah <b>192.168.100.2</b>
