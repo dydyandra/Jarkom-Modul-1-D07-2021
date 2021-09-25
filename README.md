@@ -23,6 +23,7 @@ Daanii Nabil Ghinannafsi Kusnanta | 05111940000163 |
 * [Soal 13](#soal13)
 * [Soal 14](#soal14)
 * [Soal 15](#soal15)
+* [Kendala Yang Dialami](#kendala)
 
 ## <a name="soal1"></a> Soal 1
 ### Sebutkan webserver yang digunakan pada "ichimarumaru.tech"! 
@@ -253,3 +254,7 @@ src host 192.168.100.2
 Hasil Capture Filter: <br>
   
 <img src="images/no15c.png" alt="nomor 15c" width="700"> <br>
+  
+## <a name="kendala"></a> Kendala Yang Dialami
+  - Masih sempat bingung untuk cara pengerjaan praktikum saat awal
+  - Saat pengerjaan pertama, ada beberapa paket yang tidak muncul 
