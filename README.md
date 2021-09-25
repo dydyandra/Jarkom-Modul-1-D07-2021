@@ -76,6 +76,32 @@ Kemudian setelah kita melakukan pencarian menggunakan *display filter*, kita dap
 ## Soal 10
 ### Selain itu terdapat `history.txt` yang kemungkinan berisi history bash server tersebut! Gunakan isi dari `history.txt` untuk menemukan password untuk membuka file rahasia yang ada di `secret.zip`!
 
+Display filter:
+```
+  ftp-data
+```
+
+Find string in packet list `history.txt`
+  
+<img src="https://github.com/dydyandra/Jarkom-Modul-1-D07-2021/blob/master/images/no10a.png" alt="nomor 10a" width="700"> <br>
+
+Kemudian, klik kanan dan pilih `Follow > TCP Stream`. Ada petunjuk baru, yaitu `bukanapaapa.txt`.
+  
+<img src="https://github.com/dydyandra/Jarkom-Modul-1-D07-2021/blob/master/images/no10b.png" alt="nomor 10b" width="700"> <br>
+
+Ulangi langkah sebelumnya, input display filter: `ftp-data` <br>
+Find string in packet list `bukanapaapa.txt`
+
+<img src="https://github.com/dydyandra/Jarkom-Modul-1-D07-2021/blob/master/images/no10c.png" alt="nomor 10c" width="700"> <br>
+
+Kemudian, klik kanan dan pilih `Follow > TCP Stream`. Kita akan menemukan petunjuk password berupa `dibilangbukanapaapajugagapercaya`
+
+<img src="https://github.com/dydyandra/Jarkom-Modul-1-D07-2021/blob/master/images/no10d.png" alt="nomor 10d" width="700"> <br>
+
+Gunakan password tersebut untuk membuka file `wanted.pdf`.
+
+<img src="https://github.com/dydyandra/Jarkom-Modul-1-D07-2021/blob/master/images/no10e.png" alt="nomor 10e" width="500"> <br>
+
 ## Soal 11
 ### Mengambil paket yang berasal dari port 80
 
