@@ -73,6 +73,20 @@ Kemudian setelah kita melakukan pencarian menggunakan *display filter*, kita dap
 ## Soal 9
 ### Dari paket-paket yang menuju FTP terdapat indikasi penyimpanan beberapa file. Salah satunya adalah sebuah file berisi data rahasia dengan nama `secret.zip`. Simpan dan buka file tersebut!
 
+Display filter:
+```
+  ftp-data
+```
+
+Find string in packet list `secret.zip`. Kemudian, klik kanan dan pilih `Follow > TCP Stream > Ganti format file menjadi Raw > Save as secret.zip`
+  
+<img src="https://github.com/dydyandra/Jarkom-Modul-1-D07-2021/blob/master/images/no9a.png" alt="nomor 9a" width="700"> <br>
+
+Kemudian, buka file `secret.zip` yang telah disimpan. Akan muncul perintah untuk memasukkan password.
+  
+<img src="https://github.com/dydyandra/Jarkom-Modul-1-D07-2021/blob/master/images/no9b.png" alt="nomor 9b" width="700"> <br>
+
+
 ## Soal 10
 ### Selain itu terdapat `history.txt` yang kemungkinan berisi history bash server tersebut! Gunakan isi dari `history.txt` untuk menemukan password untuk membuka file rahasia yang ada di `secret.zip`!
 
