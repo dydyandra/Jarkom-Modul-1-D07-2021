@@ -79,6 +79,17 @@ Kemudian setelah kita melakukan pencarian menggunakan *display filter*, kita dap
 ## Soal 11
 ### Mengambil paket yang berasal dari port 80
 
+Capture Filter:
+```
+src port 80
+```
+  
+<img src="https://github.com/dydyandra/Jarkom-Modul-1-D07-2021/blob/master/images/no11a.png" alt="nomor 11a" width="700"> <br>
+  
+Hasil Capture Filter: <br>
+  
+<img src="https://github.com/dydyandra/Jarkom-Modul-1-D07-2021/blob/master/images/no11b.png" alt="nomor 11b" width="700"> <br>
+  
 ## Soal 12
 ###  Mengambil paket yang mengandung port 21
 
@@ -92,11 +103,7 @@ port 21
 Hasil Capture Filter: <br>
   
 <img src="https://github.com/dydyandra/Jarkom-Modul-1-D07-2021/blob/master/images/no12b.png" alt="nomor 12b" width="700"> <br>
-  
-## Soal 14
-### Mengambil paket yang tujuannya [kemenag.go.id](https://kemenag.go.id/)
-  
-  
+
 ## Soal 13
 ### Menampilkan paket yang menuju port 443
 
