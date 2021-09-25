@@ -85,8 +85,30 @@ Kemudian setelah kita melakukan pencarian menggunakan *display filter*, kita dap
 ## Soal 13
 ### Menampilkan paket yang menuju port 443
 
+Capture Filter:
+```
+dst port 443
+```
+  
+<img src="https://github.com/dydyandra/Jarkom-Modul-1-D07-2021/blob/master/images/no13a.png" alt="nomor 13a" width="700"> <br>
+  
+Hasil Capture Filter: <br>
+  
+<img src="https://github.com/dydyandra/Jarkom-Modul-1-D07-2021/blob/master/images/no13b.png" alt="nomor 13b" width="700"> <br>
+  
 ## Soal 14
 ### Mengambil paket yang tujuannya [kemenag.go.id](https://kemenag.go.id/)
+
+Capture Filter:
+```
+dst host kemenag.go.id atau dst host 103.7.13.247
+```
+  
+<img src="https://github.com/dydyandra/Jarkom-Modul-1-D07-2021/blob/master/images/no14a.png" alt="nomor 14a" width="700"> <br>
+  
+Hasil Capture Filter: <br>
+  
+<img src="https://github.com/dydyandra/Jarkom-Modul-1-D07-2021/blob/master/images/no14b.png" alt="nomor 14b" width="700"> <br>
 
 ## Soal 15
 ### Mengambil paket yang berasal dari ip kalian
@@ -95,7 +117,10 @@ ip pada jaringan Wireless LAN adapter Wi-Fi adalah <b>192.168.100.2</b>
   
 <img src="https://github.com/dydyandra/Jarkom-Modul-1-D07-2021/blob/master/images/no15a.png" alt="nomor 15a" width="400"> <br>
 
-Capture Filter untuk mengambil paket yang berasal dari ip pribadi: `src host 192.168.100.2` <br>
+Capture Filter untuk mengambil paket yang berasal dari ip pribadi: 
+```
+src host 192.168.100.2
+```
 
 <img src="https://github.com/dydyandra/Jarkom-Modul-1-D07-2021/blob/master/images/no15b.png" alt="nomor 15b" width="700"> <br>
   
