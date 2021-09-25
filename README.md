@@ -11,23 +11,24 @@ Daanii Nabil Ghinannafsi Kusnanta | 05111940000163 |
 ### Sebutkan webserver yang digunakan pada "ichimarumaru.tech"! 
 
 Display filter yang digunakan adalah: <br>
-`http.host eq “ichimarumaru.tech” 
-`
-<br>
-<br>Setelah memasukkan display filter, dan melakukan _search_, akan muncul paket yang sesuai yaitu dimana _host_ berasal dari "ichimarumaru.tech". 
+```
+http.host eq “ichimarumaru.tech” 
+```
+Setelah memasukkan display filter dan melakukan _search_, akan muncul paket yang sesuai yaitu dimana _host_ berasal dari `ichimarumaru.tech`
 
-<img src="images/no1a.png" alt="nomor 1a" width="700">
+<img src="images/no1a.png" alt="nomor 1a" width="700"><br>
 
-Pilih paket pertama, klik kanan kemudian **Follow > HTTP Stream.** <br><br>
-**Apabila dibuka HTTP Stream:** <Br>
-Terlihat bahwa web server yang digunakan yaitu __nginx/1.18.0 (Ubuntu)__
+Pilih paket pertama, klik kanan kemudian **Follow > HTTP Stream.** Terlihat bahwa web server yang digunakan yaitu __nginx/1.18.0 (Ubuntu)__
+
 <img src="images/no1b.png" alt="nomor 1b" width="700">
 
 ## Soal 2
 ### Temukan paket dari web-web yang menggunakan basic authentication method!
 
 Display filter yang digunakan adalah: <br>
-`http.authbasic`
+```
+http.authbasic
+```
 
 Adapun setelah memasukkan _display filter_ maka akan muncul paket-paket yaitu: 
 
@@ -35,6 +36,16 @@ Adapun setelah memasukkan _display filter_ maka akan muncul paket-paket yaitu:
 
 ## Soal 3
 ### Ikuti perintah di [basic.ichimarumaru.tech](http://basic.ichimarumaru.tech/)! Username dan password bisa didapatkan dari file .pcapng!
+Display filter:
+```
+  http.host == basic.ichimarumaru.tech
+```
+Kemudian, find string in packet details "Credentials" <br>
+  
+<image src="images/no3a.png" alt="nomor 3a" width="700"><br>
+  
+**Username:** kuncimenujulautan <br>
+**Password:** tQKEJFbgNGC1NCZlWAOjhyCOm6o3xEbPkJhTciZN
   
 ## Soal 4
 ### Temukan paket mysql yang mengandung perintah query select!
@@ -44,7 +55,11 @@ Adapun setelah memasukkan _display filter_ maka akan muncul paket-paket yaitu:
   
 ## Soal 6
 ### Cari username dan password ketika melakukan login ke FTP Server!
-
+Display filter:
+```
+  ftp.request.command == USER || ftp.request.command == PASS
+```
+<image src="images/no6a.png" alt="nomor 6a" width="700"><br>
   
 ## Soal 7
 ### Ada 500 file zip yang disimpan ke FTP Server dengan nama 0.zip, 1.zip, 2.zip, ..., 499.zip. Simpan dan Buka file pdf tersebut. (Hint = nama pdf-nya `Real.pdf`)
@@ -80,11 +95,11 @@ Display filter:
 
 Find string in packet list `secret.zip`. Kemudian, klik kanan dan pilih `Follow > TCP Stream > Ganti format file menjadi Raw > Save as secret.zip`
   
-<img src="https://github.com/dydyandra/Jarkom-Modul-1-D07-2021/blob/master/images/no9a.png" alt="nomor 9a" width="700"> <br>
+<img src="images/no9a.png" alt="nomor 9a" width="700"> <br>
 
 Kemudian, buka file `secret.zip` yang telah disimpan. Akan muncul perintah untuk memasukkan password.
   
-<img src="https://github.com/dydyandra/Jarkom-Modul-1-D07-2021/blob/master/images/no9b.png" alt="nomor 9b" width="700"> <br>
+<img src="images/no9b.png" alt="nomor 9b" width="700"> <br>
 
 
 ## Soal 10
@@ -97,24 +112,24 @@ Display filter:
 
 Find string in packet list `history.txt`
   
-<img src="https://github.com/dydyandra/Jarkom-Modul-1-D07-2021/blob/master/images/no10a.png" alt="nomor 10a" width="700"> <br>
+<img src="images/no10a.png" alt="nomor 10a" width="700"> <br>
 
 Kemudian, klik kanan dan pilih `Follow > TCP Stream`. Ada petunjuk baru, yaitu `bukanapaapa.txt`.
   
-<img src="https://github.com/dydyandra/Jarkom-Modul-1-D07-2021/blob/master/images/no10b.png" alt="nomor 10b" width="700"> <br>
+<img src="images/no10b.png" alt="nomor 10b" width="700"> <br>
 
 Ulangi langkah sebelumnya, input display filter: `ftp-data` <br>
 Find string in packet list `bukanapaapa.txt`
 
-<img src="https://github.com/dydyandra/Jarkom-Modul-1-D07-2021/blob/master/images/no10c.png" alt="nomor 10c" width="700"> <br>
+<img src="images/no10c.png" alt="nomor 10c" width="700"> <br>
 
 Kemudian, klik kanan dan pilih `Follow > TCP Stream`. Kita akan menemukan petunjuk password berupa `dibilangbukanapaapajugagapercaya`
 
-<img src="https://github.com/dydyandra/Jarkom-Modul-1-D07-2021/blob/master/images/no10d.png" alt="nomor 10d" width="700"> <br>
+<img src="images/no10d.png" alt="nomor 10d" width="700"> <br>
 
 Gunakan password tersebut untuk membuka file `Wanted.pdf`.
 
-<img src="https://github.com/dydyandra/Jarkom-Modul-1-D07-2021/blob/master/images/no10e.png" alt="nomor 10e" width="500"> <br>
+<img src="images/no10e.png" alt="nomor 10e" width="500"> <br>
 
 ## Soal 11
 ### Mengambil paket yang berasal dari port 80
@@ -124,11 +139,11 @@ Capture Filter:
 src port 80
 ```
   
-<img src="https://github.com/dydyandra/Jarkom-Modul-1-D07-2021/blob/master/images/no11a.png" alt="nomor 11a" width="700"> <br>
+<img src="images/no11a.png" alt="nomor 11a" width="700"> <br>
   
 Hasil Capture Filter: <br>
   
-<img src="https://github.com/dydyandra/Jarkom-Modul-1-D07-2021/blob/master/images/no11b.png" alt="nomor 11b" width="700"> <br>
+<img src="images/no11b.png" alt="nomor 11b" width="700"> <br>
   
 ## Soal 12
 ###  Mengambil paket yang mengandung port 21
@@ -138,11 +153,11 @@ Capture Filter:
 port 21
 ```
   
-<img src="https://github.com/dydyandra/Jarkom-Modul-1-D07-2021/blob/master/images/no12a.png" alt="nomor 12a" width="700"> <br>
+<img src="images/no12a.png" alt="nomor 12a" width="700"> <br>
   
 Hasil Capture Filter: <br>
   
-<img src="https://github.com/dydyandra/Jarkom-Modul-1-D07-2021/blob/master/images/no12b.png" alt="nomor 12b" width="700"> <br>
+<img src="images/no12b.png" alt="nomor 12b" width="700"> <br>
 
 ## Soal 13
 ### Menampilkan paket yang menuju port 443
@@ -152,11 +167,11 @@ Capture Filter:
 dst port 443
 ```
   
-<img src="https://github.com/dydyandra/Jarkom-Modul-1-D07-2021/blob/master/images/no13a.png" alt="nomor 13a" width="700"> <br>
+<img src="images/no13a.png" alt="nomor 13a" width="700"> <br>
   
 Hasil Capture Filter: <br>
   
-<img src="https://github.com/dydyandra/Jarkom-Modul-1-D07-2021/blob/master/images/no13b.png" alt="nomor 13b" width="700"> <br>
+<img src="images/no13b.png" alt="nomor 13b" width="700"> <br>
   
 ## Soal 14
 ### Mengambil paket yang tujuannya [kemenag.go.id](https://kemenag.go.id/)
@@ -166,26 +181,26 @@ Capture Filter:
 dst host kemenag.go.id atau dst host 103.7.13.247
 ```
   
-<img src="https://github.com/dydyandra/Jarkom-Modul-1-D07-2021/blob/master/images/no14a.png" alt="nomor 14a" width="700"> <br>
+<img src="images/no14a.png" alt="nomor 14a" width="700"> <br>
   
 Hasil Capture Filter: <br>
   
-<img src="https://github.com/dydyandra/Jarkom-Modul-1-D07-2021/blob/master/images/no14b.png" alt="nomor 14b" width="700"> <br>
+<img src="images/no14b.png" alt="nomor 14b" width="700"> <br>
 
 ## Soal 15
 ### Mengambil paket yang berasal dari ip kalian
 Untuk mendapatkan ip pribadi: Open cmd ketik ```ipconfig``` <br>
 ip pada jaringan Wireless LAN adapter Wi-Fi adalah <b>192.168.100.2</b>
   
-<img src="https://github.com/dydyandra/Jarkom-Modul-1-D07-2021/blob/master/images/no15a.png" alt="nomor 15a" width="400"> <br>
+<img src="images/no15a.png" alt="nomor 15a" width="400"> <br>
 
 Capture Filter untuk mengambil paket yang berasal dari ip pribadi: 
 ```
 src host 192.168.100.2
 ```
 
-<img src="https://github.com/dydyandra/Jarkom-Modul-1-D07-2021/blob/master/images/no15b.png" alt="nomor 15b" width="700"> <br>
+<img src="images/no15b.png" alt="nomor 15b" width="700"> <br>
   
 Hasil Capture Filter: <br>
   
-<img src="https://github.com/dydyandra/Jarkom-Modul-1-D07-2021/blob/master/images/no15c.png" alt="nomor 15c" width="700"> <br>
+<img src="images/no15c.png" alt="nomor 15c" width="700"> <br>
