@@ -7,6 +7,7 @@ Dyandra Paramitha W. | 05111940000119 |
 Daanii Nabil Ghinannafsi Kusnanta | 05111940000163 |
 
 ## Daftar Soal
+[Drive Praktikum Modul 1](https://drive.google.com/drive/folders/11lLVpFeBZ3XNx3Oc4k8BPutYxMgWtWq4?usp=sharing)
 * [Soal 1](#soal1)
 * [Soal 2](#soal2)
 * [Soal 3](#soal3)
@@ -98,7 +99,7 @@ Adapun isi dari file tersebut adalah: <br>
 ### Cari paket yang menunjukan pengambilan file dari FTP tersebut!
 Display filter yang digunakan adalah: <br>
 ```
-  ftp.request.command==RETR
+  ftp.request.command == RETR
 ```
 
 Kemudian setelah kita melakukan pencarian menggunakan *display filter*, kita dapat melihat paket-paket yang berkaitan. 
