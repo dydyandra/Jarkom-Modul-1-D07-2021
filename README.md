@@ -66,10 +66,20 @@ Kemudian, find string in packet details "Credentials". Pada bagian Authorization
   
 ## <a name="soal4"></a> Soal 4
 ### Temukan paket mysql yang mengandung perintah query select!
+Untuk menemukan paket mysql dapat menggunakan _display filter_ `mysql`. Dan untuk menemukan paket yang mengandung query select dapat dilakukan dengan filter `contains select`. Sehingga untuk menjawab soal, digunakan display filter `mysql contains select`.
+ <image src="images/no4a.png" alt="nomor 4a" width="700"><br>
+Maka didapat 2 paket yang mengandung query select. Salah satunya mengandung query `select count(*) from users`.
   
 ## <a name="soal5"></a> Soal 5
 ### Login ke [portal.ichimarumaru.tech](http://portal.ichimarumaru.tech/) kemudian ikuti perintahnya! Username dan password bisa didapat dari query insert pada table users dari file .pcap! 
-  
+Pertama-tama kita harus mendapatkan username dan password sebelum menuju portal. Untuk menemukannya dapat dicari pada file hasil capture `1-5.pcap`. Lalu, gunakan display filter `mysql` untuk mendapatkan paket-paket mysql. Karena menurut informasi soal, username dan password terdapat dari query insert pada mysql. 
+   <image src="images/no5a.png" alt="nomor 5a" width="700"><br>
+ Setelah itu periksa isi-isi paket tersebut. Klik kanan pada salah satu paket lalu klik Follow > TCP Stream. maka akan didapat isi dari percakapan paket paket mysql tersebut.
+     <image src="images/no5b.png" alt="nomor 5b" width="700"><br>
+ Dapat dilihat pada salah satu paket atau percakapan terdapat query `INSERT INTO users (username,password) VALUES ("akakanomi",md5("pemisah4lautan"))`. Sehingga didapatkan username akakanomi dan password pemisah4lautan. Setelah itu kita bisa langsung masuk ke [portal.ichimarumaru.tech](http://portal.ichimarumaru.tech/)/. Setelah login akan muncul tampilan berikut. Tampilan berisi soal tentang urutan konfigurasi pengkabelan T568B. Jawaban diisikan pada web lalu di Screenshot. 
+     <image src="images/no5c.png" alt="nomor 5c" width="700"><br>  
+Urutan konfigurasi pengkabelan T568B adalah oranye-putih, oranye, hijau-putih, biru, biru-putih, hijau, cokelat-putih, cokelat.     
+     
 ## <a name="soal6"></a> Soal 6
 ### Cari username dan password ketika melakukan login ke FTP Server!
 FTP menggunakan command "USER" ketika ingin memasukkan username dan "PASS" ketika ingin memasukkan password. Display filter:
