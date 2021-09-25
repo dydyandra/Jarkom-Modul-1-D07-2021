@@ -90,3 +90,15 @@ Kemudian setelah kita melakukan pencarian menggunakan *display filter*, kita dap
 
 ## Soal 15
 ### Mengambil paket yang berasal dari ip kalian
+Untuk mendapatkan ip pribadi: Open cmd ketik ```ipconfig``` <br>
+ip pada jaringan Wireless LAN adapter Wi-Fi adalah <b>192.168.100.2</b>
+  
+<img src="https://github.com/dydyandra/Jarkom-Modul-1-D07-2021/blob/master/images/no15a.png" alt="nomor 15a" width="400"> <br>
+
+Capture Filter untuk mengambil paket yang berasal dari ip pribadi: `src host 192.168.100.2` <br>
+
+<img src="https://github.com/dydyandra/Jarkom-Modul-1-D07-2021/blob/master/images/no15b.png" alt="nomor 15b" width="700"> <br>
+  
+Hasil Capture Filter: <br>
+  
+<img src="https://github.com/dydyandra/Jarkom-Modul-1-D07-2021/blob/master/images/no15c.png" alt="nomor 15c" width="700"> <br>
