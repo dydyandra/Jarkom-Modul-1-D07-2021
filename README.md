@@ -82,6 +82,21 @@ Kemudian setelah kita melakukan pencarian menggunakan *display filter*, kita dap
 ## Soal 12
 ###  Mengambil paket yang mengandung port 21
 
+Capture Filter:
+```
+port 21
+```
+  
+<img src="https://github.com/dydyandra/Jarkom-Modul-1-D07-2021/blob/master/images/no12a.png" alt="nomor 12a" width="700"> <br>
+  
+Hasil Capture Filter: <br>
+  
+<img src="https://github.com/dydyandra/Jarkom-Modul-1-D07-2021/blob/master/images/no12b.png" alt="nomor 12b" width="700"> <br>
+  
+## Soal 14
+### Mengambil paket yang tujuannya [kemenag.go.id](https://kemenag.go.id/)
+  
+  
 ## Soal 13
 ### Menampilkan paket yang menuju port 443
 
